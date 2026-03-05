@@ -482,6 +482,33 @@
     @media (max-width: 600px) {
       .nav-links { display: none; }
       .hero { padding-top: 120px; }
+      .mobile-nav-btns { display: flex; }
+    }
+    .mobile-nav-btns {
+      display: none;
+      gap: 10px;
+      align-items: center;
+    }
+    .mobile-rsvp {
+      background: var(--red);
+      color: white !important;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      padding: 8px 14px;
+      text-decoration: none;
+    }
+    .mobile-submit {
+      background: transparent;
+      color: var(--gold) !important;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      padding: 8px 14px;
+      border: 1px solid var(--gold);
+      text-decoration: none;
     }
   </style>
 </head>
@@ -497,6 +524,10 @@
     <li><a href="#submissions">Submit</a></li>
     <li><a href="https://forms.gle/tjPNu2VXRv4SroXc9" target="_blank" class="nav-rsvp">RSVP</a></li>
   </ul>
+  <div class="mobile-nav-btns">
+    <a href="#submissions" class="mobile-submit">Submit</a>
+    <a href="https://forms.gle/tjPNu2VXRv4SroXc9" target="_blank" class="mobile-rsvp">RSVP</a>
+  </div>
 </nav>
 
 <div class="film-strip"></div>
@@ -516,6 +547,7 @@
   <div class="hero-cta">
     <a href="https://forms.gle/tjPNu2VXRv4SroXc9" target="_blank" class="btn-primary">RSVP Now</a>
     <a href="#schedule" class="btn-secondary">View Schedule</a>
+    <a href="#submissions" class="btn-secondary">Submit Proposals</a>
   </div>
 </section>
 
